@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- 
+	登录主页面布局
+ -->
+
+<AnchorPane fx:id="an" prefHeight="550.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Label layoutX="229.0" layoutY="208.0" prefHeight="42.0" prefWidth="73.0" text="帐 号：">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#242121d6" />
+                  <Stop color="#000000d6" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="229.0" layoutY="261.0" prefHeight="42.0" prefWidth="80.0" text="密 码：">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_text" alignment="CENTER" layoutX="315.0" layoutY="208.0" prefHeight="36.0" prefWidth="210.0" promptText="请输入帐号">
+         <tooltip>
+            <Tooltip fx:id="name_tooltip" text="请输入帐号" />
+         </tooltip>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+      <Button fx:id="login_btn" layoutX="321.0" layoutY="308.0" mnemonicParsing="false" onAction="#LoginEvent" prefHeight="42.0" prefWidth="80.0" text="登陆">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#242121d6" />
+                  <Stop color="#000000d6" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="regist_btn1" layoutX="437.0" layoutY="308.0" mnemonicParsing="false" onAction="#RegistEvent" prefHeight="42.0" prefWidth="80.0" text="注册">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#242121d6" />
+                  <Stop color="#000000d6" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label fx:id="txtbox" layoutX="234.0" layoutY="76.0" prefHeight="98.0" prefWidth="372.0" text="Vitamin数据管理系统" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="ps_text" alignment="CENTER" layoutX="315.0" layoutY="261.0" prefHeight="36.0" prefWidth="210.0" promptText="请输入密码">
+         <tooltip>
+            <Tooltip fx:id="ps_tooltip" text="请输入密码" />
+         </tooltip>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

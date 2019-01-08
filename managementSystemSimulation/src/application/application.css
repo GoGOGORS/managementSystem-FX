@@ -1,0 +1,21 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*
+ * 登陆页面css样式表
+ */
+.button {
+	-fx-background-radius: 30px;
+	-fx-background-color:#AEEEEE;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+	-fx-background-color:#87CEFA
+}
+
+.root {
+	-fx-font-style: oblique;
+	-fx-font-family: "微软雅黑";
+	-fx-background-image: url(/images/login_background_image.jpg);
+	-fx-background-size: stretch stretch;
+	-fx-background-position: center center;
+}

@@ -1,0 +1,18 @@
+.button {
+	-fx-background-radius: 30px;
+	-fx-background-color:#B2DFEE;
+}
+
+.button:hover {
+	-fx-cursor: hand;
+	-fx-background-color:#87CEFA
+}
+
+.root {
+	-fx-font-style: normal;
+	-fx-font-size: 21px;
+	-fx-font-family: "微软雅黑";
+	
+	-fx-background-size: stretch stretch;
+	-fx-background-position: center center;
+}

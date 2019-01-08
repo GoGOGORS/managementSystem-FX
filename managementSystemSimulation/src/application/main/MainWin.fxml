@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="825.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.main.MainWindowController">
+   <children>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="102.0" prefHeight="600.0" prefWidth="997.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="50.0" text="Id" />
+          <TableColumn fx:id="name" prefWidth="90.0" text="Name" />
+            <TableColumn fx:id="price" prefWidth="90.0" text="Price" />
+            <TableColumn fx:id="weight" prefWidth="90.0" text="Weight" />
+            <TableColumn fx:id="comment" prefWidth="90.0" text="Comment" />
+            <TableColumn fx:id="source" text="Source" />
+            <TableColumn fx:id="apply" prefWidth="90.0" text="Apply" />
+            <TableColumn fx:id="type" prefWidth="90.0" text="Type" />
+            <TableColumn fx:id="praise" text="Praise" />
+            <TableColumn fx:id="commonly" prefWidth="90.0" text="Commonly" />
+            <TableColumn fx:id="negative" prefWidth="151.0" resizable="false" text="NegativeComment" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="420.0" layoutY="33.0" prefHeight="40.0" prefWidth="313.0" text="Vitamin管理模拟系统">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_search" layoutX="98.0" layoutY="744.0" prefHeight="40.0" prefWidth="228.0" promptText="根据商品名称查询数据" />
+      <Text layoutX="14.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name：" wrappingWidth="106.2724609375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="text_delete" layoutX="640.0" layoutY="744.0" prefHeight="40.0" prefWidth="207.0" promptText="根据商品id删除商品" />
+      <Text layoutX="599.0" layoutY="772.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id：">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="search_btn" layoutX="339.0" layoutY="743.0" onAction="#Search_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="81.0" text="查询">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete_btn" layoutX="863.0" layoutY="743.0" mnemonicParsing="false" onAction="#delete_btn" prefHeight="40.0" prefWidth="81.0" text="删除">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_add" layoutX="891.0" layoutY="53.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="40.0" prefWidth="81.0" text="添加">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="flash_btn" layoutX="431.0" layoutY="743.0" mnemonicParsing="false" onAction="#flashTableView" prefHeight="40.0" prefWidth="81.0" text="刷新">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

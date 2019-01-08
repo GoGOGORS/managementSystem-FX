@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- 
+	注册界面 -->
+
+<AnchorPane fx:id="u_box" prefHeight="606.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.regist.RegistWinController">
+   <children>
+      <Label layoutX="380.0" layoutY="71.0" prefHeight="38.0" prefWidth="99.0" text="注   册">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="138.0" prefHeight="45.0" prefWidth="87.0" text="姓   名：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="200.0" layoutY="202.0" prefHeight="45.0" prefWidth="87.0" text="帐户名：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="u_name" layoutX="300.0" layoutY="203.0" prefHeight="31.0" prefWidth="300.0" promptText="请输入帐号，长度不超过11">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Label layoutX="200.0" layoutY="260.0" prefHeight="45.0" prefWidth="87.0" text="密   码：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="200.0" layoutY="321.0" prefHeight="45.0" prefWidth="87.0" text="年   龄：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="413.0" layoutY="319.0" prefHeight="45.0" prefWidth="87.0" text="性   别：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="u_age" layoutX="300.0" layoutY="322.0" prefHeight="42.0" prefWidth="95.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <TextField fx:id="real_name" layoutX="301.0" layoutY="141.0" prefHeight="31.0" prefWidth="300.0" promptText="请输入你的真实姓名">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Label layoutX="200.0" layoutY="384.0" prefHeight="45.0" prefWidth="87.0" text="地   址：">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="u_adress" layoutX="300.0" layoutY="378.0" prefHeight="56.0" prefWidth="300.0" promptText="请输入地址">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Label layoutX="200.0" layoutY="447.0" prefHeight="45.0" prefWidth="87.0" text="电   话：" AnchorPane.bottomAnchor="114.0">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <TextField fx:id="u_call" layoutX="300.0" layoutY="448.0" prefHeight="31.0" prefWidth="300.0" promptText="请输入电话">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <Button fx:id="regist" layoutX="368.0" layoutY="517.0" mnemonicParsing="false" onAction="#RegistUser" prefHeight="50.0" prefWidth="123.0" text="确定">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <PasswordField fx:id="u_password" layoutX="300.0" layoutY="261.0" prefHeight="31.0" prefWidth="300.0" promptText="请输入密码，长度不超过11">
+         <font>
+            <Font size="21.0" />
+         </font></PasswordField>
+      <TextField fx:id="u_sex" layoutX="506.0" layoutY="321.0" prefHeight="42.0" prefWidth="95.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
